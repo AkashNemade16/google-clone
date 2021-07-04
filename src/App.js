@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import Home from './pages/home';
+import SearchPage from './components/SearchPage'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Router>
         <Switch>
           <Route path='/search'>
-            <h1>HI this is google clone</h1>
+            <SearchPage/>
           </Route>
           <Route path='/'>
             <Home/>
